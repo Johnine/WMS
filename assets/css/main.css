@@ -1,0 +1,63 @@
+.panel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid silver;
+    overflow-y: scroll;
+}
+
+.panel-top {
+    flex: 1 1 auto;
+    /* only manually resize */
+    padding: 10px;
+    min-height: 100px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.splitter-horizontal {
+    flex: 0 0 auto;
+    height: 18px;
+    background: url("../img/hsizegrip.png") center center no-repeat #535353;
+    cursor: row-resize;
+}
+
+.panel-bottom {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 10px;
+    min-height: 200px;
+    /*background: ##F9F9F9;*/
+}
+
+.round-input {
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+}
+
+#addscroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+    z-index: 99999999;
+}
+
+#addscroll::-webkit-scrollbar-thumb {
+    background-color: #535353;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+    z-index: 99999999;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #535353;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
